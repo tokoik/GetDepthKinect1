@@ -91,5 +91,18 @@
     <None Include="normal.frag">
       <Filter>シェーダー ファイル</Filter>
     </None>
+    <None Include="bilateral.frag">
+      <Filter>シェーダー ファイル</Filter>
+    </None>
+    <None Include="rectangle.frag">
+      <Filter>シェーダー ファイル</Filter>
+    </None>
+    <None Include="refraction.frag">
+      <Filter>シェーダー ファイル</Filter>
+    </None>
+    <None Include="refraction.vert">
+      <Filter>シェーダー ファイル</Filter>
+    </None>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

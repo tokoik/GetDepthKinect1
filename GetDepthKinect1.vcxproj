@@ -69,23 +69,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Program Files %28x86%29\SoftKinetic\DepthSenseSDK\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files %28x86%29\SoftKinetic\DepthSenseSDK\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\SoftKinetic\DepthSenseSDK\include;C:\OpenCV\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\SoftKinetic\DepthSenseSDK\lib;C:\OpenCV\x86\vc14\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Program Files\SoftKinetic\DepthSenseSDK\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files\SoftKinetic\DepthSenseSDK\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files\SoftKinetic\DepthSenseSDK\include;C:\OpenCV\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\SoftKinetic\DepthSenseSDK\lib;C:\OpenCV\x64\vc14\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Program Files %28x86%29\SoftKinetic\DepthSenseSDK\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files %28x86%29\SoftKinetic\DepthSenseSDK\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\SoftKinetic\DepthSenseSDK\include;C:\OpenCV\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\SoftKinetic\DepthSenseSDK\lib;C:\OpenCV\x86\vc14\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Program Files\SoftKinetic\DepthSenseSDK\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files\SoftKinetic\DepthSenseSDK\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files\SoftKinetic\DepthSenseSDK\include;C:\OpenCV\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\SoftKinetic\DepthSenseSDK\lib;C:\OpenCV\x64\vc14\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -170,9 +170,14 @@
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bilateral.frag" />
     <None Include="normal.frag" />
+    <None Include="packages.config" />
     <None Include="position.frag" />
+    <None Include="rectangle.frag" />
     <None Include="rectangle.vert" />
+    <None Include="refraction.vert" />
+    <None Include="refraction.frag" />
     <None Include="simple.frag" />
     <None Include="simple.vert" />
   </ItemGroup>
